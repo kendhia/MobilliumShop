@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1019088009899",
+    "firebase_url": "https://mobilliumshop.firebaseio.com",
+    "project_id": "mobilliumshop",
+    "storage_bucket": "mobilliumshop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019088009899:android:a12fa6644517b3ca",
+        "android_client_info": {
+          "package_name": "kendhia.me.projects.mobilliumshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019088009899-2l3o69n9l9t8o3thbsrvehc691jnnphi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kendhia.me.projects.mobilliumshop",
+            "certificate_hash": "e53bb92dc5e5fa8026bcba18f2ea41f876d43301"
+          }
+        },
+        {
+          "client_id": "1019088009899-b4s13n87amncmsqqkp5opko3ust816kf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwZ8cZWE_s3byBKsue0wBKNgzs5kDmCUc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019088009899-b4s13n87amncmsqqkp5opko3ust816kf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
