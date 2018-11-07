@@ -1,9 +1,10 @@
 package kendhia.me.projects.mobilliumshop
 
+import android.app.Activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 
-class LoginActivity : AppCompatActivity() {
+class LoginActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
