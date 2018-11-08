@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MobilliumShop</string>
     <string name="app_logo">app_logo</string>
+
+
+    <string name="login_error">We couldn\'t login. Please try again.</string>
+    <string name="try_again">Try Again</string>
 </resources>
