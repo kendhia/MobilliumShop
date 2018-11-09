@@ -5,4 +5,19 @@
 
     <string name="login_error">We couldn\'t login. Please try again.</string>
     <string name="try_again">Try Again</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="urun_bilgisi">Ürun Bilgisi</string>
+    <string name="urun_aciklamasi">Ürün Açıklaması</string>
+    <string name="iade_degisim">İade ve Değişim</string>
+    <string name="beden_tablosu">Beden Tablosu</string>
+
+
+    <string name="random_paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non tortor eros.
+        Phasellus auctor sagittis eros, sed hendrerit dolor efficitur sed. Aenean eleifend in ligula a semper. Mauris
+        pharetra egestas erat a convallis. Nullam malesuada ipsum metus, ac egestas erat aliquet feugiat. Vivamus quis
+        enim eu purus pretium fringilla id in tortor. Etiam ac felis ut nisi euismod vehicula non ut sem. Nunc augue
+        diam, dapibus a nisi vitae, faucibus molestie orci. Proin a sagittis massa. Nulla facilisi.
+    </string>
 </resources>

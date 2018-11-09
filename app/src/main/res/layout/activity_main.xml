@@ -6,5 +6,213 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/app_bar_height"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="10dp" android:id="@+id/relativeLayout">
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/backACIV"
+                android:layout_width="@dimen/toolbar_ic_size"
+                android:layout_height="@dimen/toolbar_ic_size"
+                android:layout_margin="10dp"
+                app:srcCompat="@drawable/ic_back"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/>
+
+        <TextView
+                android:id="@+id/toolbarHeaderTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="V Yak Uzun Elbise"
+                android:layout_centerInParent="true"
+                tools:textColor="@color/black"
+                android:textSize="@dimen/app_bar_header_text_size"
+                app:fontFamily="@font/rubik_light"/>
+
+        <FrameLayout
+                android:layout_width="@dimen/toolbar_ic_size"
+                android:layout_height="@dimen/toolbar_ic_size"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+            <TextView
+                    android:id="@+id/toolbarNumOfItemsTV"
+                    android:layout_width="@dimen/toolbar_ic_size"
+                    android:layout_height="@dimen/toolbar_ic_size"
+                    tools:text="15"
+                    android:layout_marginTop="10dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"/>
+            <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/numOfShopItemsACIV"
+                    android:layout_width="@dimen/toolbar_ic_size"
+                    android:layout_height="@dimen/toolbar_ic_size"
+                    app:srcCompat="@drawable/ic_shopping_bag"/>
+
+
+        </FrameLayout>
+
+
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.46"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:orientation="horizontal">
+        <Button
+                android:id="@+id/itemBuy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:layout_margin="10dp"
+                android:text="Sepete Ekle"
+                android:textColor="@color/white"
+                android:background="@color/black"/>
+
+        <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/itemFavACIV"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_like"
+                android:layout_margin="10dp"
+        />
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/button2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <fragment android:name="kendhia.me.projects.mobilliumshop.Fragment.ShoppingItemFragment"
+                      android:id="@+id/ShoppingItemFragmentView"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="5dp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_grey"/>
+
+            <fragment android:name="kendhia.me.projects.mobilliumshop.Fragment.SimilarProductsFragment"
+                      android:id="@+id/SimilarProductsFragmentView"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="5dp"/>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_grey"/>
+
+            <fragment android:name="kendhia.me.projects.mobilliumshop.Fragment.ShoppingHistoryFragment"
+                      android:id="@+id/ShoppingHistoryFragmentView"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp"
+                      android:layout_marginBottom="5dp"/>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grey"
+                    android:layout_margin="40dp"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_gift"
+                        android:drawablePadding="20dp"
+                        android:text="Alışverişini 500 TL'ye tamamla 50 TL kazan"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_label_text_size"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_loop"
+                        android:drawablePadding="20dp"
+                        android:text="90 gün değişim ve iade"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/item_label_text_size"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_shield"
+                        android:drawablePadding="20dp"
+                        android:text="7/24 güvenli alışveris"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_label_text_size"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_hand"
+                        android:drawablePadding="20dp"
+                        android:text="Taksit seçenekleri"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_label_text_size"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                />
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_van"
+                        android:drawablePadding="20dp"
+                        android:text="100 TL ve üzeri alışverişlerde ücretsiz kargo"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/item_label_text_size"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="10dp"
+                />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
