@@ -43,10 +43,14 @@ class ShopItemImageAdapter : PagerAdapter() {
         return galleryImgs!!.size
     }
 
-    fun addImageUrl(imageUrl : String) {
-        if (galleryImgs == null) galleryImgs  = ArrayList()
-        galleryImgs!!.add(imageUrl)
+    fun addImagesUrl(imageUrl : List<String>) {
+        if (galleryImgs == null)  galleryImgs = ArrayList()
+        galleryImgs!!.addAll(imageUrl)
 
+    }
+
+    fun clear() {
+        if (galleryImgs != null) galleryImgs = ArrayList()
     }
 
 }

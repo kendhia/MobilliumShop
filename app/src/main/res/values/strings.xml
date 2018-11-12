@@ -20,4 +20,6 @@
         enim eu purus pretium fringilla id in tortor. Etiam ac felis ut nisi euismod vehicula non ut sem. Nunc augue
         diam, dapibus a nisi vitae, faucibus molestie orci. Proin a sagittis massa. Nulla facilisi.
     </string>
+    <string name="shopping_history">Son Gezdiklerin</string>
+    <string name="similar_products">Kombinini Tamamla</string>
 </resources>
