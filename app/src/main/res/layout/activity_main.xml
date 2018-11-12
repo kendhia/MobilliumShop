@@ -82,10 +82,14 @@
                       android:layout_marginTop="5dp"
                       android:layout_marginBottom="5dp"/>
 
-            <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/divider_grey"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/similar_products"
+                    android:textSize="@dimen/title"
+                    android:layout_margin="10dp"/>
+
 
             <fragment android:name="kendhia.me.projects.mobilliumshop.Fragment.SimilarProductsFragment"
                       android:id="@+id/SimilarProductsFragmentView"
@@ -98,12 +102,24 @@
                     android:layout_height="1dp"
                     android:background="@color/divider_grey"/>
 
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping_history"
+                    android:textSize="@dimen/title"
+                    android:layout_margin="10dp"/>
+
             <fragment android:name="kendhia.me.projects.mobilliumshop.Fragment.ShoppingHistoryFragment"
                       android:id="@+id/ShoppingHistoryFragmentView"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:layout_marginTop="5dp"
-                      android:layout_marginBottom="5dp"/>
+                      android:layout_marginBottom="10dp"/>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/divider_grey"/>
 
             <LinearLayout
                     android:layout_width="match_parent"
@@ -200,7 +216,7 @@
                         android:layout_height="48dp"
                         android:layout_weight="1"
                         android:layout_gravity="center"
-                        app:srcCompat="@drawable/ic_like"
+                        app:srcCompat="@drawable/item_fav_selector"
                         android:layout_margin="10dp"/>
             </LinearLayout>
 

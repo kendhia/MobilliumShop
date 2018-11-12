@@ -19,9 +19,9 @@ class ShopViewModel : ViewModel() {
 
 
     private val shoppingProductDumpImages: ArrayList<String> by lazy {
-        arrayListOf("https://img-trendyol.mncdn.com/mnresize/415/622//Assets/ProductImages/oa/69/3713361/1/8681825115685_1_org_zoom.jpg",
-            "https://img-trendyol.mncdn.com/mnresize/415/622//Assets/ProductImages/oa/69/3713361/1/8681825115685_2_org_zoom.jpg",
-            "https://img-trendyol.mncdn.com/mnresize/415/622//Assets/ProductImages/oa/69/3713361/1/8681825115685_3_org_zoom.jpg")
+        arrayListOf("https://img.oxxo.com.tr/ContentImages/Product/18k/18KOX-VISNEWDAN/dantel-detayli-dusuk-omuzlu-triko_ice-milk-krem_1_enbuyuk.jpg",
+            "https://img.oxxo.com.tr/ContentImages/Product/18k/18KOX-VISNEWDAN/dantel-detayli-dusuk-omuzlu-triko_ice-milk-krem_2_enbuyuk.jpg",
+            "https://img.oxxo.com.tr/ContentImages/Product/18k/18KOX-VISNEWDAN/dantel-detayli-dusuk-omuzlu-triko_ice-milk-krem_3_enbuyuk.jpg")
     }
 
     private val shoppingProductDumpImagesRed : ArrayList<String> by lazy {
@@ -127,7 +127,7 @@ class ShopViewModel : ViewModel() {
 
     private fun loadSimilarProducts() {
         val listOfProducts = ArrayList<Product>()
-        for (i in 1..8) {
+        for (i in 0..7) {
             val product = Product(listOf(shoppingProductsDumpImages[i]), shoppingProductsDumpTitles[i], shoppingProductsDumpPrices[i])
             listOfProducts.add(product)
         }
@@ -137,7 +137,7 @@ class ShopViewModel : ViewModel() {
 
     private fun loadHistoryProducts() {
         val listOfProducts = ArrayList<Product>()
-        for (i in 1..8) {
+        for (i in 0..7) {
             val product = Product(listOf(shoppingProductsDumpImages[i]), shoppingProductsDumpTitles[i], shoppingProductsDumpPrices[i])
             listOfProducts.add(product)
         }
