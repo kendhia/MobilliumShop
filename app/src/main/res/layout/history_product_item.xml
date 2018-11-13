@@ -18,7 +18,7 @@
                 android:layout_width="@dimen/similar_product_item_weight"
                 android:layout_height="120dp"
                 android:scaleType="matrix"
-                android:src="@mipmap/shopping"/>
+                android:src="@drawable/shopping"/>
 
         <TextView
                 android:id="@+id/similarProductTitle"
